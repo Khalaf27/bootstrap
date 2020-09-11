@@ -1,0 +1,128 @@
+// Body
+body {
+background-color: rgb(109, 109, 103);
+}
+
+// Nav
+
+.navbar-brand {
+    color: white;
+     
+
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+   
+}
+
+nav {
+    color: white;
+}
+
+.navlink {
+    background-color: white;
+}
+
+.navbar-nav {
+
+color: white;
+
+}
+
+.container-fluid{
+    margin: 10px;
+  
+}
+
+// Overskrifter
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin: 35px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+    text-align: center;
+    color: $websitecolor;
+    margin: 20px;
+    letter-spacing: 5px;
+    
+}
+
+
+// Section 1
+
+// Section 2
+
+.btn-primary {
+    background-color: $websitecolor;
+    border-color: darken($websitecolor, 3%);
+
+    &:hover {
+        background-color: darken($websitecolor, 3%);
+        border-color: darken($websitecolor, 3%);
+    }
+}
+
+// Card
+
+.card {
+    @include my-rotate
+}
+
+// Section 37
+
+h3 {
+    color: white;
+}
+
+.border1 {
+
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px white;
+    padding: 10px;
+}
+
+
+// Section 4
+
+.center{
+    text-align: center;
+}
+
+.end{
+    margin-bottom: 50px;
+    justify-content: space-around;
+    
+}
+
+// Footer
+
+footer{
+    
+    font-size: 25px;
+    padding: 15px;
+text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@include fa-icon; 
+
+.user {
+    @extend %fa-icon;
+    @extend .fas;
+
+    &:before {
+        content: fa-content($fa-var-user);
+    }
+}
